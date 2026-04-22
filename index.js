@@ -18,7 +18,6 @@ app.use(express.json());
 app.use(cors());
 app.use(helmet());
 
-// Routes
 app.use('/api', apiRoutes);
 
 app.get('/', (req, res) => {
