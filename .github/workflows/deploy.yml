@@ -32,5 +32,5 @@ jobs:
           script: |
             cd /home/ubuntu/servertriraxtech-updated
             npm ci --omit=dev
-            pm2 restart servertriraxtech-updated || pm2 start index.js --name servertriraxtech-updated
+            pm2 restart servertriraxtech-updated || pm2 restart all
             echo "Backend Deployed Successfully!"
