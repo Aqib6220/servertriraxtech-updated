@@ -1,10 +1,10 @@
-const mongoose = require('mongoose');
+﻿const mongoose = require('mongoose');
 
 const blogSchema = new mongoose.Schema({
     title: { type: String, required: true },
     slug: { type: String, required: true, unique: true },
     content: { type: String, required: true },
-    author: { type: String, default: 'TrirexTech Team' },
+    author: { type: String, default: 'TriraxTech Team' },
     image: { type: String },
     tags: [String],
     isPublished: { type: Boolean, default: false }

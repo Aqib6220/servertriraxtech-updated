@@ -1,4 +1,4 @@
-const express = require("express");
+﻿const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const helmet = require("helmet");
@@ -31,7 +31,7 @@ app.use(helmet());
 app.use("/api", apiRoutes);
 
 app.get("/", (req, res) => {
-  res.send("TrirexTech API is running...");
+  res.send("TriraxTech API is running...");
 });
 
 const PORT = process.env.PORT || 5000;
